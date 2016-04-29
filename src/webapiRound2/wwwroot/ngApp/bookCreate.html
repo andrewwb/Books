@@ -1,0 +1,29 @@
+﻿<form ng-submit="controller.saveBook()">
+
+    <div>
+        <div ng-repeat="error in controller.errors.title" style="color:red;">
+            {{error}}
+        </div>
+        <input ng-model="controller.book.title" placeholder="Title" />
+    </div>
+    <div>
+        <div ng-repeat="error in controller.errors.author" style="color:red;">
+            {{error}}
+        </div>
+        <input ng-model="controller.book.author" placeholder="Author" />
+    </div>
+    <div>
+        <div ng-repeat="error in controller.errors.genre" style="color:red;">
+            {{error}}
+        </div>
+        <input ng-model="controller.book.genre" placeholder="Genre" />
+    </div>
+    <div>
+        <div ng-repeat="error in controller.errors.pageCount" style="color:red;">
+            {{error}}
+        </div>
+        <input ng-model="controller.book.pageCount" placeholder="Page Count" />
+    </div>
+
+    <input type="submit" value="Save Book" />
+</form>

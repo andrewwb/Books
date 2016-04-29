@@ -1,0 +1,6 @@
+﻿<ul>
+    <li ng-repeat="book in controller.books">
+        {{book.title}} - by {{book.author}}
+        <a ui-sref="bookDetails({id: book.id})">Details</a>
+    </li>
+</ul>
